@@ -1,0 +1,110 @@
+a {
+    display: block;
+    width: 300px;
+    padding: 31px 5px;
+    border-radius: 5px;
+    margin: 20% auto;
+    background-color: orange;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 32px;
+    color: MintCream;
+    transition-property: background-color;
+    transition-duration: 5s;
+    transition-delay: 2s;
+}
+
+a:hover {
+    background-color: LimeGreen;
+}
+
+.elem {
+    background: orange;
+    width: 300px;
+    height: 150px;
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 1000ms;
+}
+
+.elem1 {
+    background: pink;
+    width: 300px;
+    height: 150px;
+    animation: moveToLeft 2s ease-in-out;
+    animation-delay: 1000ms;
+}
+
+.elem2 {
+    background: dodgerblue;
+    width: 300px;
+    height: 150px;
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 1000ms;
+}
+
+.elem3 {
+    background: red;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    animation: moveToLeft 5s linear infinite;
+    animation-delay: 1000ms;
+    background: purple;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    animation: moveToLeft 5s linear infinite;
+    animation-delay: 1000ms;
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+@keyframes moveToLeft {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(300px);
+    }
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(150px);
+    }
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(0px);
+        background: linear-gradient( to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    }
+    25% {
+        transform: translateX(400px);
+        background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+    50% {
+        transform: translateY(200px) translateX(400px);
+        background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    }
+    75% {
+        transform: translateX(0px) translateY(200px);
+        background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
