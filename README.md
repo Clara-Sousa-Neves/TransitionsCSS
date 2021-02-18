@@ -1,2 +1,2 @@
-# TransitionsCSS
-Playing with transitions.
+# Transitions&AnimationsCSS
+Playing with transitions & Animations.
